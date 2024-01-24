@@ -1331,3 +1331,7 @@ def check_token():
 def do_this():
     print(current_user.username)
     return jsonify({'user': current_user.username })
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
